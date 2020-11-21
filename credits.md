@@ -1,0 +1,1 @@
+Huge thanks to https://github.com/sivel/speedtest-cli for powering the speedtest.py script, I had to make some changes to it to support 
