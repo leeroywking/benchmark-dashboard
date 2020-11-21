@@ -1,5 +1,5 @@
 import speedtest
-import platform, socket, re, uuid, json, logging, subprocess, glob, shutil
+import platform, socket, re, uuid, json, logging, subprocess, glob, shutil, psutil
 
 
 def getSystemInfo():
@@ -10,6 +10,7 @@ def getSystemInfo():
         info["platform-version"] = platform.version()
         info["architecture"] = platform.machine()
         info["total_harddrive_space"] = shutil.disk_usage("/")[0]
+        info["total_memory"] = psutil.virtual_memory()[0]
         # info
         # ["hostname"] = socket.gethostname()
         # info["ip-address"] = socket.gethostbyname(socket.gethostname())
