@@ -11,10 +11,6 @@ def getSystemInfo():
         info["architecture"] = platform.machine()
         info["total_harddrive_space"] = shutil.disk_usage("/")[0]
         info["processor"] = platform.processor()
-        # info
-        # ["hostname"] = socket.gethostname()
-        # info["ip-address"] = socket.gethostbyname(socket.gethostname())
-        # info["mac-address"] = ":".join(re.findall("..", "%012x" % uuid.getnode()))
         info["processor"] = platform.processor()
         return json.dumps(info)
     except Exception as e:
@@ -54,11 +50,11 @@ if __name__ == "__main__":
     system_info = json.loads(getSystemInfo())
     release_info = get_release_info()
     cpu_info = get_cpu_info()
-    # speedtest_results = speedtest.shell()
+    speedtest_results = speedtest.shell()
     output = {
         "system_info": system_info,
         "linux_info": release_info,
-        # "speedtest_info": speedtest_results.dict(),
+        "speedtest_info": speedtest_results.dict(),
         "cpu_info" : cpu_info
     }
     print(json.dumps(output, indent=4))
