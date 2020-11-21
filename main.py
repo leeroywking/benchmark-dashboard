@@ -1,5 +1,5 @@
 import speedtest
-import platform, socket, re, uuid, json, logging, subprocess, glob
+import platform, socket, re, uuid, json, logging, subprocess, glob, shutil
 
 
 def getSystemInfo():
@@ -9,6 +9,7 @@ def getSystemInfo():
         info["platform-release"] = platform.release()
         info["platform-version"] = platform.version()
         info["architecture"] = platform.machine()
+        info["total_harddrive_space"] = shutil.disk_usage("/")[0]
         # info
         # ["hostname"] = socket.gethostname()
         # info["ip-address"] = socket.gethostbyname(socket.gethostname())
@@ -38,10 +39,10 @@ def get_release_info():
 if __name__ == "__main__":
     system_info = json.loads(getSystemInfo())
     release_info = get_release_info()
-    results = speedtest.shell()
+    # speedtest_results = speedtest.shell()
     output = {
         "system_info": system_info,
         "linux_info": release_info,
-        "speedtest_info": results.dict(),
+        # "speedtest_info": speedtest_results.dict(),
     }
     print(json.dumps(output, indent=4))
