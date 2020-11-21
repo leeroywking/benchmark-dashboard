@@ -36,14 +36,12 @@ def get_release_info():
 
 
 if __name__ == "__main__":
-    # results = speedtest.shell()
-    # print(results.dict())
     system_info = json.loads(getSystemInfo())
-    # print(system_info)
     release_info = get_release_info()
+    results = speedtest.shell()
     output = {
         "system_info": system_info,
-        # "speedtest_info": results.dict(),
-        "Linux_info": release_info,
+        "linux_info": release_info,
+        "speedtest_info": results.dict(),
     }
-    print(json.dumps(output))
+    print(json.dumps(output, indent=4))

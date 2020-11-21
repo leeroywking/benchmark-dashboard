@@ -1,0 +1,64 @@
+{
+    "system_info": {
+        "platform": "Linux",
+        "platform-release": "5.4.0-53-generic",
+        "platform-version": "#59-Ubuntu SMP Wed Oct 21 09:38:44 UTC 2020",
+        "architecture": "x86_64",
+        "processor": "x86_64"
+    },
+    "Linux_info": {
+        "extras": [
+            ""
+        ],
+        "DISTRIB_ID": "Ubuntu",
+        "DISTRIB_RELEASE": "20.04",
+        "DISTRIB_CODENAME": "focal",
+        "DISTRIB_DESCRIPTION": "Ubuntu 20.04.1 LTS",
+        "NAME": "Ubuntu",
+        "VERSION": "20.04.1 LTS (Focal Fossa)",
+        "ID": "ubuntu",
+        "ID_LIKE": "debian",
+        "PRETTY_NAME": "Ubuntu 20.04.1 LTS",
+        "VERSION_ID": "20.04",
+        "HOME_URL": "https://www.ubuntu.com/",
+        "SUPPORT_URL": "https://help.ubuntu.com/",
+        "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+        "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+        "VERSION_CODENAME": "focal",
+        "UBUNTU_CODENAME": "focal"
+    },
+    "speedtest_info": {
+        "download": 71368467.70959057,
+        "upload": 8326632.104380039,
+        "ping": 22.959,
+        "server": {
+            "url": "http://sea.host.speedtest.net:8080/speedtest/upload.php",
+            "lat": "47.6062",
+            "lon": "-122.3321",
+            "name": "Seattle, WA",
+            "country": "United States",
+            "cc": "US",
+            "sponsor": "Speedtest.net",
+            "id": "10395",
+            "host": "sea.host.speedtest.net:8080",
+            "d": 7.376741658415122,
+            "latency": 22.959
+        },
+        "timestamp": "2020-11-21T21:17:41.108832Z",
+        "bytes_sent": 10526720,
+        "bytes_received": 89477896,
+        "share": null,
+        "client": {
+            "ip": "75.172.53.193",
+            "lat": "47.6674",
+            "lon": "-122.3701",
+            "isp": "CenturyLink",
+            "isprating": "3.7",
+            "rating": "0",
+            "ispdlavg": "0",
+            "ispulavg": "0",
+            "loggedin": "0",
+            "country": "US"
+        }
+    }
+}
