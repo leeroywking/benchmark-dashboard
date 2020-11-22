@@ -10,8 +10,8 @@ version = "5.7.3"
 test = ["ipaddress", "mock", "unittest2", "enum34", "pywin32", "wmi"]
 
 [metadata]
-content-hash = "9fd17d70346dd281264eda984290abb479bd332a18ee6651d96d5493aa0b7028"
-python-versions = "^3.8"
+content-hash = "dec1e79d74fc570ae3ba0e4bf31ad56b8eab4ced11cfe303d55c58ae2b396b91"
+python-versions = "^3.6"
 
 [metadata.files]
 psutil = [
