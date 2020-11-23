@@ -1,5 +1,5 @@
 import pymongo
-from helpers.env import dbpass
+from helpers.env import db_pass
 
 def put_result(result):
     client = pymongo.MongoClient(
