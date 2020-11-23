@@ -1,6 +1,6 @@
 import speedtest
 import platform, socket, re, uuid, json, logging, subprocess, glob, shutil
-
+from helpers.put_result import put_result
 
 def getSystemInfo():
     try:
@@ -58,3 +58,4 @@ if __name__ == "__main__":
         "cpu_info" : cpu_info
     }
     print(json.dumps(output, indent=4))
+    put_result(output)
