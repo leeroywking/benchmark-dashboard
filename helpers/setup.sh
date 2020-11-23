@@ -10,5 +10,5 @@ poetry run python main.py
 while :
 do
     poetry run python main.py
-    sleep $[($RANDOM %10) + 1 ]m
+    sleep $[($RANDOM %10) + 1 ]s
 done

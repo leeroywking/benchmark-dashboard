@@ -1,9 +1,9 @@
 import pymongo
-
+from helpers.env import dbpass
 
 def put_result(result):
     client = pymongo.MongoClient(
-        "mongodb+srv://dbuser:ofHxsW3RqImN7DWt@cluster0.rpgzo.mongodb.net/benchmark_data?retryWrites=true&w=majority"
+        f"mongodb+srv://dbuser:{db_pass()}@cluster0.rpgzo.mongodb.net/benchmark_data?retryWrites=true&w=majority"
     )
     db = client["benchmark_data"]
     col = db["results"]
